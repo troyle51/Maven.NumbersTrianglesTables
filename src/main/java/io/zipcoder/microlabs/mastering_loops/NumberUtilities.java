@@ -38,8 +38,12 @@ public class NumberUtilities {
         return outcome;
     }
 
-    public static String getRange(int start) {
-        return null;
+    public static String getRange(int stop) {
+        String outcome = "";
+        for (int i = 0; i < stop; i++){
+            outcome += i;
+        }
+        return outcome;
     }
 
     public static String getRange(int start, int stop) {
