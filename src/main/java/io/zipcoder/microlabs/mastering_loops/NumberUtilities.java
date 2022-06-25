@@ -47,16 +47,35 @@ public class NumberUtilities {
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+        String outcome = "";
+        for (int i = start; i < stop; i++){
+            outcome += i;
+        }
+        return outcome;
     }
 
 
     public static String getRange(int start, int stop, int step) {
-        return null;
+        String outcome = "";
+        for (int i = start; i < stop; i+=step){
+            outcome += i;
+        }
+        return outcome;
     }
 
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
-        return null;
+        String outcome = "";
+
+        for (int i = start; i < stop; i += step) {
+
+            double db = Math.pow(i, exponent);
+
+            int result = (int)db;
+            String.valueOf(result);
+            //System.out.println(result);
+            outcome += result;
+        }
+        return outcome;
     }
 }
