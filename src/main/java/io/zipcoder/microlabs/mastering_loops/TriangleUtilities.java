@@ -39,10 +39,9 @@ public class TriangleUtilities {
         String outcome = "";
         int i = 1;
         while (i < 10) {
-            getRow(i);
-            outcome = outcome + "*";
+            outcome = outcome + getRow(i) + "\n";
             i++;
-            System.out.println(outcome);
+            //System.out.println(outcome);
         }
         return outcome;
     }
