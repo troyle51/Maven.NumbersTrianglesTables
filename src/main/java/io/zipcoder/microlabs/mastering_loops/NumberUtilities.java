@@ -15,16 +15,29 @@ public class NumberUtilities {
     }
 
 
+//    public static String getOddNumbers(int start, int stop) {
+//        String outcome = "";
+//        for (int i = start; i < stop; i++){
+//            if (i % 2 != 0) {
+//                System.out.println(i);
+//                outcome += i;
+//            }
+//
+//        }
+//        return outcome;
+//    }
+
+    ///////////BETTER METHOD USE STRINGBUILDER/////////
     public static String getOddNumbers(int start, int stop) {
-        String outcome = "";
+        StringBuilder str = new StringBuilder();
         for (int i = start; i < stop; i++){
             if (i % 2 != 0) {
                 System.out.println(i);
-                outcome += i;
+                str.append(i);
             }
 
         }
-        return outcome;
+        return str.toString();
     }
 
 
@@ -55,13 +68,23 @@ public class NumberUtilities {
     }
 
 
+//    public static String getRange(int start, int stop, int step) {
+//        String outcome = "";
+//        for (int i = start; i < stop; i+=step){
+//            outcome += i;
+//        }
+//        return outcome;
+//    }
+
+    //////BETTER METHOD////////
     public static String getRange(int start, int stop, int step) {
-        String outcome = "";
+        StringBuilder str = new StringBuilder();
         for (int i = start; i < stop; i+=step){
-            outcome += i;
+            str.append(i);
         }
-        return outcome;
+        return str.toString();
     }
+
 
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
