@@ -9,7 +9,6 @@ public class TriangleUtilities {
 
             outcome += getRow(i) + "\n";
             i++;
-            //System.out.println(outcome);
         }
         return outcome;
     }
@@ -30,7 +29,6 @@ public class TriangleUtilities {
         while (i < 5) {
             outcome += getRow(i) + "\n";
             i++;
-            //System.out.println(outcome);
         }
         return outcome;
     }
@@ -41,7 +39,6 @@ public class TriangleUtilities {
         while (i < 10) {
             outcome = outcome + getRow(i) + "\n";
             i++;
-            //System.out.println(outcome);
         }
         return outcome;
     }

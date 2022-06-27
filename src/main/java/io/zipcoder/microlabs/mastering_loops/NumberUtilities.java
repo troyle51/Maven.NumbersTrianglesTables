@@ -33,7 +33,7 @@ public class NumberUtilities {
         for (int i = start; i < stop; i++){
             if (i % 2 != 0) {
                 System.out.println(i);
-                str.append(i);
+                str.append(String.valueOf(i));
             }
 
         }
