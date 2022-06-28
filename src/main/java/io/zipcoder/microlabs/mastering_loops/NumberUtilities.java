@@ -52,31 +52,13 @@ public class NumberUtilities {
     }
 
     public static String getRange(int stop) {
-        String outcome = "";
-        for (int i = 0; i < stop; i++){
-            outcome += i;
-        }
-        return outcome;
+        return getRange(0,stop,1);
     }
 
     public static String getRange(int start, int stop) {
-        String outcome = "";
-        for (int i = start; i < stop; i++){
-            outcome += i;
-        }
-        return outcome;
+        return getRange(start,stop, 1);
     }
 
-
-//    public static String getRange(int start, int stop, int step) {
-//        String outcome = "";
-//        for (int i = start; i < stop; i+=step){
-//            outcome += i;
-//        }
-//        return outcome;
-//    }
-
-    //////BETTER METHOD////////
     public static String getRange(int start, int stop, int step) {
         StringBuilder str = new StringBuilder();
         for (int i = start; i < stop; i+=step){
@@ -84,8 +66,6 @@ public class NumberUtilities {
         }
         return str.toString();
     }
-
-
 
     public static String getExponentiations(int start, int stop, int step, int exponent) {
         String outcome = "";
